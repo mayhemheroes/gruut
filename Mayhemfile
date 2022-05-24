@@ -1,0 +1,10 @@
+project: gruut
+target: gruut
+image: ghcr.io/ebell495/gruut:latest
+duration: 300
+
+tests: null
+
+cmds:
+    - cmd: fuzz/fuzz.py
+      libfuzzer: true

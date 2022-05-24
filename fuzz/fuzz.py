@@ -1,8 +1,10 @@
 #!/usr/local/bin/python3
 import atheris
 import sys
+import networkx
 
-from gruut import sentences
+with atheris.instrument_imports():
+    from gruut import sentences
 
 
 @atheris.instrument_func
@@ -13,6 +15,6 @@ def TestOneInput(data):
             pass
 
 
-atheris.instrument_all()
+# atheris.instrument_all()
 atheris.Setup(sys.argv, TestOneInput)
 atheris.Fuzz()

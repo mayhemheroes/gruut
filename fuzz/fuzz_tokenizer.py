@@ -1,7 +1,6 @@
 #!/usr/local/bin/python3
 import atheris
 import sys
-import networkx
 
 with atheris.instrument_imports():
     from gruut import sentences

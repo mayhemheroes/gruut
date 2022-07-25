@@ -1,6 +1,6 @@
 project: gruut
-target: fuzz
+target: fuzz_tokenizer
 
 cmds:
-    - cmd: fuzz/fuzz.py
+    - cmd: fuzz/fuzz_tokenizer.py
       libfuzzer: true
